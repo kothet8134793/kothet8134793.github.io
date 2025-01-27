@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Student Registration</h1>
+
+    <form action="request.php" method="get">
+        <label for="name">Name</label>
+        <input type="text" name="student_name" id="name">
+        <br><br>
+
+        <label for="email">Email</label>
+        <input type="email" name="student_email" id="email">
+        <br><br>
+
+        <label for="phone">phone</label>
+        <input type="number" name="student_phone" id="phone">
+        <br><br>
+
+        <label for="Password">Password</label>
+        <input type="password" name="student_password" id="password">
+        <br><br>
+
+        <label for="dob">Dote of Birth</label>
+        <input type="date" name="student_dob" id="dob">
+        <br><br>
+
+        <label for="passport">Passport Image</label>
+        <input type="file" accept=".png,.jpg" name="student_passport" id="passport">
+        <br><br>
+        
+        <button type="submit">Save</button>
+
+        <!-- file:///C:/Users/user/kothet8134793.github.io/HTML/link/request.php?student_name=Thet+Naing+Aung&student_email=kothet8134793%40gmail.com&student_phone=08099882529&student_password=*****&student_dob=1997-07-21&student_passport=tutu.jpg -->
+
+    </form>
+    
+</body>
+</html>
