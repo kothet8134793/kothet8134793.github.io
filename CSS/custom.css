@@ -37,3 +37,24 @@ a[title="google"]{
 .child > a{
     color: rgb(222, 138, 29);
 }
+/* pseudo selector */
+/* :link */
+a:link{
+    color:red;
+}
+a:hover{
+    color:aquamarine;
+    letter-spacing: 15px;
+
+}
+a:active{
+    color:yellowgreen;
+}
+a:visited{
+    color:rgb(227, 220, 234);
+}
+
+:target{
+    color: red;
+    border: 2px solid black;
+}

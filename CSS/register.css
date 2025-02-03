@@ -1,0 +1,18 @@
+#mybody{
+    background-color: aqua;
+}
+.heading{
+    text-align: center;
+    color: red;
+}
+
+#myForm{
+    width: 40%;
+    margin: auto;
+    color: burlywood;
+}
+
+input[type="text"]{
+    width: 100%;
+    height: 40px;
+}
