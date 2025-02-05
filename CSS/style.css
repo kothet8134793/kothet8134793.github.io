@@ -1,9 +1,12 @@
 h1{
     text-align: center;
-    color: red;
+    color: red
+}
+p{
+    text-indent: 50px;
 }
 small{
-    color: green;
+    color: blue;
     font-size: 20px;
-    
+    text-indent: 50px;
 }

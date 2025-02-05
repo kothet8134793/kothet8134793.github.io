@@ -1,4 +1,4 @@
-#mybody{
+/* #mybody{
     background-color: aqua;
 }
 .heading{
@@ -15,4 +15,82 @@
 input[type="text"]{
     width: 100%;
     height: 40px;
+} */
+#mybody{
+    background-color: lightblue;
+}
+
+.heading{
+    text-align: center;
+    color: blue;
+}
+#myform{
+    width: 40%;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+/*group  selector*/
+
+input[type="text"], input[type="email"], input[type="number"] , input[type="date"], #edu {
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border-radius: 10px;
+}
+
+
+input[type="text"]:focus, input[tyspe="email"]:focus, input[type="number"]:focus, input[type="date"]:focus, #edu:focus {
+   color: whitesmoke;
+   background-color: black;
+   font-weight: bold;
+   border:4px solid blue;
+}
+/*radio*/
+input[type="radio"]:checked + label {
+    color:blue;
+    letter-spacing: 5px;
+}
+/*checkebox(enabled and disabled)*/
+input[type="checkbox"]:enabled + label {
+    color:red;
+    font-style:Arial;
+}
+input[type="checkbox"]:disabled + label {
+    text-decoration: line-through;
+    font-style:Arial;
+}
+
+input[type="checkbox"]:checked + label{
+    color:green;
+    font-weight: bold;
+}
+/* first child /last child */
+ul li:first-child{
+    background-color: yellow;
+}
+ul li:last-child{
+    background-color:red;
+}
+ul li:nth-child(3){
+    background-color: green;
+}
+
+/*empty*/
+p:empty{
+    height: 20px;
+    background-color: black;
+}
+/*button*/
+.reg_btn{
+  
+    width: 150px;
+    height: 40px;
+}
+
+.reg_btn:hover{
+    background-color: black;
+    color: white;
+    cursor: grabbing;
+    
 }

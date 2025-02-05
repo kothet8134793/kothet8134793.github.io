@@ -1,60 +1,64 @@
-/* universal selector */
+/*unversial*/
 *{
-    /* color: red; */
+    /*color: red;*/
     font-size: 20px;
 }
-/* tag / element selector */
+
+/*tag / element*/
+
 h1{
-    color: aqua;
-}
-/* attibute selector */
-a[title="google"]{
     color: blue;
+    text-align: center;
+}
+/*attribute*/
+a[title="google"]{
+    color: green;
     letter-spacing: 10px;
-
 }
-/* id selector */
-#idOne{
-    color: blueviolet;
-    
+/*id selector*/
+#idone{
+    color: blue;
+    text-align: center;
 }
-
-/* class selector */
-.ClassOne{
+/*class selector*/
+.classone{
     color: brown;
     line-height: 30px;
-    text-indent: 40px;
-    text-transform: uppercase;
+    text-indent: 50px;
+    text-transform: capitalize;
     word-spacing: 10px;
 }
 
-/* desc selector */
-.dec a{
-    color: rgb(222, 138, 29)ue;
+/*descendent */
+.desc a{
+    color:red;
     text-decoration: none;
 }
-/* child selector */
-.child > a{
-    color: rgb(222, 138, 29);
+
+/*child */
+.child > a {
+    color: green;
+    text-decoration: none;
 }
-/* pseudo selector */
-/* :link */
+
+
+/*pesudo*/
 a:link{
-    color:red;
+    color: red;
 }
 a:hover{
-    color:aquamarine;
-    letter-spacing: 15px;
-
+    color: green;
 }
 a:active{
-    color:yellowgreen;
+    color:yellow;
 }
 a:visited{
-    color:rgb(227, 220, 234);
+    color:blueviolet;
 }
 
+
+/*target*/
 :target{
-    color: red;
-    border: 2px solid black;
+    color:red;
+    border:2px solid black;
 }
