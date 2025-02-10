@@ -62,3 +62,60 @@ a:visited{
     color:red;
     border:2px solid black;
 }
+
+/* border */
+.borderOne{
+    border: 20px dashed yellow;
+}
+/* bordersize */
+.borderTwo{
+    border-left: 10px solid red;
+}
+
+.borderSizeOne{
+    border-style: solid;
+    /* border-width: 10px;
+     T R B L
+     border-width: 10px 100px;
+     T&B  L&R */
+     border-width: 1px 5px 10px 15px;
+     /* T R B L */
+}
+
+.borderstyle{
+    border-style: solid dashed double dotted;
+    border-color: red green;
+}
+/* margin */
+.margin{
+    border: 10px solid black;
+    margin: 50px 20px;
+    /* margin: left 200px; */
+}
+
+/* padding */
+.padding{
+    border: 1px solid red;
+    padding: 100px 10px 50px 20px
+}
+
+/* inline */
+.Inline{
+    border: 2px solid red;
+    width: 300px;
+    display: inline-block;
+}
+
+/* block */
+.block{
+    border: 2px solid black;
+    width: 300px;
+    display: inline-block;
+}
+
+/* position */
+.relative_parents{
+    border: 2px solid red;
+    width: 1000px;
+    height: 500pz;
+}
