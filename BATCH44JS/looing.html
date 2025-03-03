@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping</title>
+</head>
+<body>
+    <h1>Looping Lesson</h1>
+    <script>
+        for (let h = 0; h < 5; h++) {
+            for (let m = 0; m <= h; m++) {
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+        
+        let number = Number(prompt("Enter A Number"));
+
+        while (number < 100) {
+            document.write('Your Number is ${number} <br>');
+
+            number += 5;
+        }
+         
+
+        let no = 110;
+
+        do { 
+            document.write('Your number is = ${no} <br>');
+
+            no += 20;
+
+        } while (no < 100);
+    </script>
+</body>
+</html>

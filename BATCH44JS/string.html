@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+    <h1>String Lessons</h1>
+
+    <script>
+        let firstName = "Developer";
+        let lastName = "Thet Naing AUNG";
+        console.log(firstName, lastName); // Console မှာ နာမည်နှစ်ခုကို ပြမယ်
+        console.log(lastName.length); // lastName ရဲ့ အက္ခရာရေကို ပြမယ်
+    
+        let fullName = firstName + ' ' + lastName; // firstName နဲ့ lastName ကို ပေါင်းမယ်
+        console.log(fullName); // ပေါင်းထားတဲ့နာမည်ကို ပြမယ်
+    
+        console.log("My Name is " + fullName); // နာမည်ပြည့်ကို ပြမယ်
+    
+        document.write(fullName + '<br>'); // Browser မှာ နာမည်ပြည့်ကို ပြမယ်
+    
+        document.write(firstName + '<br>' + lastName + '<br><br>'); // firstName နဲ့ lastName ကို ခွဲပြမယ်
+    
+        document.write(`${firstName} <br> ${lastName} <br><br>`); // Template Literal သုံးပြီး ပြမယ်
+        document.write(`My Name is ${fullName}, I am 25 years old.<br>`); // Template Literal သုံးပြီး စာကြောင်းပြည့်ပြမယ်
+    
+        document.write(firstName.toUpperCase() + '<br>'); // firstName ကို အကြီးစာလုံးနဲ့ ပြမယ်
+        document.write(lastName.toLowerCase() + '<br>'); // lastName ကို အသေးစာလုံးနဲ့ ပြမယ်
+    
+
+        let myJob = "       Senior          Developer"; // myJob ဆိုတဲ့ Variable မှာ ရှေ့နောက်မှာ Space တွေပါတဲ့ String ကို သိမ်းထားတယ်
+        document.write(myJob.trim() + '<br>'); // trim() ကို သုံးပြီး ရှေ့နောက်က Space တွေကို ဖြတ်ပစ်တယ်။ Result က "Senior          Developer" ဖြစ်မယ်
+
+        let ser = "Javascript is funny!"; // ser ဆိုတဲ့ Variable မှာ String ကို သိမ်းထားတယ်
+        document.write(ser.search('is') + '<br>'); // search() ကို သုံးပြီး 'is' ဆိုတဲ့ စာလုံးရဲ့ Position ကို ရှာတယ်။ Result က 11 ဖြစ်မယ် (ဘာလို့လဲဆိုတော့ 'is' က 11th Index မှာ စတယ်)
+
+        let rep = "I want to visit Mandalay"; // rep ဆိုတဲ့ Variable မှာ String ကို သိမ်းထားတယ်
+        document.write(rep.replace('Mandalay', 'Yongon') + '<br>'); // replace() ကို သုံးပြီး 'Mandalay' ဆိုတဲ့ စာလုံးကို 'Yongon' နဲ့ အစားထိုးတယ်။ Result က "I want to visit Yongon" ဖြစ်မယ်
+
+        document.write('I\'m Thet Naing Aung'); // Single Quote ထဲမှာ Single Quote ပါတဲ့စာကြောင်းကို ရေးဖို့ Escape Character (\') ကို သုံးထားတယ်
+        document.write("I'm Thet Naing Aung,My height is 5'6\""); // Double Quote ထဲမှာ Single Quote နဲ့ Double Quote ပါတဲ့စာကြောင်းကို ရေးဖို့ Escape Character (\") ကို သုံးထားတယ်
+        document.write(`I'm Thet Naing Aung,My height is 5'6"`); // Template Literal (Backtick) ကို သုံးထားတာကြောင့် Escape Character မလိုဘဲ Single Quote နဲ့ Double Quote ကို တိုက်ရိုက်ရေးလို့ရတယ်
+    </script>
+    
+</body>
+</html>

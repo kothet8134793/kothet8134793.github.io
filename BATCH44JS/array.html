@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <h1>Array Lesson</h1>
+
+    <script>
+        let array = [1, 2, 3];
+        console.log(array[1]); // 2 ကို ပြမယ် (Index 1 မှာရှိတဲ့ Element)
+        console.log(array.length); // 3 ကို ပြမယ် (Array ရဲ့ Length)
+    
+        let fruits = ['Apple', 'Orange', 'Mango', 'Strawberry'];
+        console.log(fruits.length); // 4 ကို ပြမယ် (Array ရဲ့ Length)
+        console.log(fruits); // ['Apple', 'Orange', 'Mango', 'Strawberry'] ကို ပြမယ်
+        fruits.push('Banana'); // Array ရဲ့ နောက်ဆုံးမှာ 'Banana' ထည့်မယ်
+        console.log(fruits); // ['Apple', 'Orange', 'Mango', 'Strawberry', 'Banana'] ကို ပြမယ်
+    
+        fruits.pop(); // Array ရဲ့ နောက်ဆုံးက 'Banana' ကို ဖျက်မယ်
+        console.log(fruits); // ['Apple', 'Orange', 'Mango', 'Strawberry'] ကို ပြမယ်
+    
+        fruits.unshift('Cherry'); // Array ရဲ့ ရှေ့ဆုံးမှာ 'Cherry' ထည့်မယ်
+        console.log(fruits); // ['Cherry', 'Apple', 'Orange', 'Mango', 'Strawberry'] ကို ပြမယ်
+        fruits.unshift('BlueBerry'); // Array ရဲ့ ရှေ့ဆုံးမှာ 'BlueBerry' ထည့်မယ်
+        console.log(fruits); // ['BlueBerry', 'Cherry', 'Apple', 'Orange', 'Mango', 'Strawberry'] ကို ပြမယ်
+    
+        fruits.shift(); // Array ရဲ့ ရှေ့ဆုံးက 'BlueBerry' ကို ဖျက်မယ်
+        console.log(fruits); // ['Cherry', 'Apple', 'Orange', 'Mango', 'Strawberry'] ကို ပြမယ်
+    </script>
+    
+</body>
+</html>
